@@ -1,2 +1,2 @@
-# galleriaFlickr
-An evaluation project to use Galleria and Flickr to show a pretty gallery of photos from a Flickr album
+# prototype
+This is my starter files.  has links to the libraries and stuff I need
