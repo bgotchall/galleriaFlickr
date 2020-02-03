@@ -19,13 +19,14 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./galleria/dist/galleria.js"></script>
+  <script src="./galleria/dist/plugins/flickr/galleria.flickr.js"></script>
 
   <link rel="stylesheet" type="text/css" href="normalize.css" />
   <link rel="stylesheet" type="text/css" href="style.css" />
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/galleria/1.5.7/galleria.min.js"></script> -->
-  <script src="./galleria/dist/galleria.min.js"></script>
+
+
 
   <title>Prototype Project Files</title>
   <link rel="shortcut icon" href="./programming.png" />
@@ -34,10 +35,10 @@
 <body>
   <div class="container"></div>
   <h1> Hi there</h1>
- 
+
 
   <div class="galleria">
-    <img src="./assets/photos/file.jpg">
+    <!-- <img src="./assets/photos/file.jpg">
     <img src="./assets/photos/IMG_4646.JPG">
     <img src="./assets/photos/IMG_9056.JPG">
     <img src="./assets/photos/IMG_0355.JPG">
@@ -45,12 +46,27 @@
     <img src="./assets/photos/IMG_9142.JPG">
     <img src="./assets/photos/IMG_9166.JPG">
     <img src="./assets/photos/IMG_9171.JPG">
-    <img src="./assets/photos/IMG_9177.JPG">
+    <img src="./assets/photos/IMG_9177.JPG"> -->
 
   </div>
-
-
-  <script src="script.js"></script>
 </body>
+
+  
+  <!-- <script src="script.js"></script> -->
+  <script>
+
+    //public photo set: 72157712929505937 
+    Galleria.loadTheme("./galleria/dist/themes/folio/galleria.folio.js");   //local
+    //Galleria.run('.galleria');
+
+    Galleria.run('.galleria', {
+    flickr: 'set:72157712929505937',
+    flickrOptions: {
+        sort: 'date-posted-asc',
+        imageSize: 'original'
+    }
+});
+  </script>
+
 
 </html>

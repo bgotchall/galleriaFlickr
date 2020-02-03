@@ -1,0 +1,22 @@
+{
+  "name": "galleriaflickr",
+  "version": "1.0.0",
+  "description": "This is my starter files.  has links to the libraries and stuff I need",
+  "main": "example1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgotchall/galleriaFlickr.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bgotchall/galleriaFlickr/issues"
+  },
+  "homepage": "https://github.com/bgotchall/galleriaFlickr#readme",
+  "dependencies": {
+    "flickr-sdk": "^3.9.0"
+  }
+}
